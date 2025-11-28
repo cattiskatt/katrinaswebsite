@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<!-- 🔻 Project 1 Popup -->
+<div id="project1-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2> Clustr (Ongoing) </h2>
+    <p> I am currently working as a UI/UX designer for this app called Clustr. Clustr is productivity app that is currently under development. </p>
+
+    <ul>
+      <li>This is built with: <b> Figma </b></li>
+    </ul>
+
+    <br>
+    <h4> Onboarding Flow </h4>
+    <div class = "onboardingimgset">
+      <img src="clustr1.png" alt ="onboardingflow1">
+      <img src="login.png" alt ="onboardingflow1">
+      <img src="enter email.png" alt ="onboardingflow1">
+      <img src="create a password.png" alt ="onboardingflow1">
+      <img src="Username.png" alt ="onboardingflow1">
+      <img src="personal info.png" alt ="onboardingflow1">
+      <img src="preferences.png" alt ="onboardingflow1">
+    </div>
+    <br>
+    <h4> Home Page </h4>
+    <div class = "homeimgset">
+      <img src="home v2..png" alt ="onboardingflow1">
+      <img src="Communities.png" alt ="onboardingflow1">
+      <img src="singular community.png" alt ="onboardingflow1">
+      <img src="community chats.png" alt ="onboardingflow1">
+    </div>
+
+
+  </div>
+</div>
+<!-- 🔻 Project 2 Popup -->
+<div id="project2-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2> Puzzol </h2>
+    <p> I made this for the NYU Product Case Competition, which had a 24 hour limit </p>
+
+    <ul>
+      <li>This is built with: <b> Figma </b></li>
+    </ul>
+
+    <br>
+    <h4> Landing Page </h4>
+    <div class = "onboardingimgset">
+      <img src="Landing Page.png" alt ="onboardingflow1">
+    </div>
+    
+    <h4> Home Page </h4>
+    <div class = "homeimgset">
+      <img src="Home Page.png" alt ="onboardingflow1">
+      <img src="Daily Usage - Patterns.png" alt ="onboardingflow1">
+      <img src="Recommendation.png" alt ="onboardingflow1">
+
+    </div>
+    <br>
+    <h4> In-App Embedded Page </h4>
+    <div class = "homeimgset">
+      <img src="In-App Feature.png" alt ="onboardingflow1">
+      <img src="iPhone 16 - 1.png" alt ="onboardingflow1">
+      <img src="puzzle wirefram.png" alt ="onboardingflow1">
+
+    </div>
+
+  </div>
+</div>
+<body>
+  <div class="construction-banner">
+    🚧 This site is still under construction — stay tuned! 🚧
+  </div>
+  <!-- Header / Hero Section -->
+  <header>
+    <h1>Hi, I'm Katrina</h1>
+    <p>Jack of all trades. Master of all. </p>
+    <a href="#about" class="btn">View My Work</a>
+    <!-- Scroll Indicator -->
+  <div class="scroll-down">
+    &#x25BC;
+  </div>
+
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello, my name is Katrina (Kat) ^._.^ I'm a current freshman at the University of Illinois Urbana Champaign studying computer engineering. 
+      I'm an aspiring developer and designer. I have experience in UI/UX design, product management, and several programming 
+      langugages. I enjoy building all sorts of projects and they're right below this section. Enjoy!
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Design Projects</h2>
+    <div class="project-container">
+
+      <div class="project">
+        <h3>Clustr</h3>
+        <p> UI/UX designer for a developing start-up</p>
+        <a href="#" class="view-btn" data-modal="project1-modal">View Project</a>
+      </div>
+      <div class="project2">
+        <h3>Puzzol</h3>
+        <p> Product Case Competition Mock-up </p>
+        <a href="#" class="view-btn" data-modal="project2-modal">View Project</a>
+      </div>
+
+    </div>
+  </section>
+  
+  <section id="projects2">
+    <h2>Hardware Projects</h2>
+    <div class="project-container">
+    <p> Coming Soon. .  .</p>
+
+    </div>
+  </section>
+
+  <section id="projects2"> 
+    
+    <h2>Mechanical Projects</h2>
+    <div class="project-container"></div>
+    <p> Coming Soon. .  .</p>
+
+    </div>
+  </section>
+
+  <section id="projects2"> 
+    
+    <h2>AR/VR Projects</h2>
+    <div class="project-container"></div>
+    <p> Coming Soon. .  .</p>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:klin45@illinois.edu" target = "_blank" rel = "noopener">klin45@illinois.edu</a></p>
+    <p>LinkedIn: <a href = "https://www.linkedin.com/in/katlin-" target = "_blank" rel = "noopener"> Katrina Lin </a></p>
+  </footer>
+
+</body>
+</html>
+<script>
+  document.querySelectorAll(".view-btn").forEach(btn => {
+    btn.onclick = e => {
+      e.preventDefault();
+      const modal = document.getElementById(btn.dataset.modal);
+      modal.style.display = "flex";
+    }
+  });
+
+  document.querySelectorAll(".close").forEach(close => {
+    close.onclick = () => close.parentElement.parentElement.style.display = "none";
+  });
+
+  window.onclick = e => {
+    if (e.target.classList.contains("modal")) e.target.style.display="none";
+  }
+</script>
+
