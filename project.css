@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
  font-family: "Gamja Flower", sans-serif;
-}
 
+}
 body {
   background-color: #faf7f2;
   color: #2e2e2e;
@@ -188,4 +188,54 @@ footer {
 .modal-images img {
   height: 180px;
   border-radius: 10px;
+}
+
+.page-header {
+  background: #faf7f2;
+  padding: 4rem 0 2rem;
+   margin-left:5rem;
+
+}
+
+.page-header h1 {
+  font-size: 3rem;
+}
+
+.timeline {
+  padding: 3rem 0;
+  margin-left:5rem;
+  margin-right:5rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.timeline-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.timeline-content h2 {
+  margin-bottom: 0.3rem;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+.tech {
+  margin-top: 0.8rem;
+  font-weight: 500;
+  color: #7a5c3e;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(0,0,0,0.1);
 }

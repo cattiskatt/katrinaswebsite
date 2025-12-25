@@ -2,177 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kat’s Corner</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
 </head>
-<!-- 🔻 Project 1 Popup -->
-<div id="project1-modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
 
-    <h2> Clustr (Ongoing) </h2>
-    <p> I am currently working as a UI/UX designer for this app called Clustr. Clustr is productivity app that is currently under development. </p>
-
-    <ul>
-      <li>This is built with: <b> Figma </b></li>
-    </ul>
-
-    <br>
-    <h4> Onboarding Flow </h4>
-    <div class = "onboardingimgset">
-      <img src="clustr1.png" alt ="onboardingflow1">
-      <img src="login.png" alt ="onboardingflow1">
-      <img src="enter email.png" alt ="onboardingflow1">
-      <img src="create a password.png" alt ="onboardingflow1">
-      <img src="Username.png" alt ="onboardingflow1">
-      <img src="personal info.png" alt ="onboardingflow1">
-      <img src="preferences.png" alt ="onboardingflow1">
-    </div>
-    <br>
-    <h4> Home Page </h4>
-    <div class = "homeimgset">
-      <img src="home v2..png" alt ="onboardingflow1">
-      <img src="Communities.png" alt ="onboardingflow1">
-      <img src="singular community.png" alt ="onboardingflow1">
-      <img src="community chats.png" alt ="onboardingflow1">
-    </div>
-
-
-  </div>
-</div>
-<!-- 🔻 Project 2 Popup -->
-<div id="project2-modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-
-    <h2> Puzzol </h2>
-    <p> I made this for the NYU Product Case Competition, which had a 24 hour limit </p>
-
-    <ul>
-      <li>This is built with: <b> Figma </b></li>
-    </ul>
-
-    <br>
-    <h4> Landing Page </h4>
-    <div class = "onboardingimgset">
-      <img src="Landing Page.png" alt ="onboardingflow1">
-    </div>
-    
-    <h4> Home Page </h4>
-    <div class = "homeimgset">
-      <img src="Home Page.png" alt ="onboardingflow1">
-      <img src="Daily Usage - Patterns.png" alt ="onboardingflow1">
-      <img src="Recommendation.png" alt ="onboardingflow1">
-
-    </div>
-    <br>
-    <h4> In-App Embedded Page </h4>
-    <div class = "homeimgset">
-      <img src="In-App Feature.png" alt ="onboardingflow1">
-      <img src="iPhone 16 - 1.png" alt ="onboardingflow1">
-      <img src="puzzle wirefram.png" alt ="onboardingflow1">
-
-    </div>
-
-  </div>
-</div>
 <body>
-  <div class="construction-banner">
-    🚧 This site is still under construction — stay tuned! 🚧
-  </div>
-  <!-- Header / Hero Section -->
-  <header>
-    <h1>Hi, I'm Katrina</h1>
-    <p>Jack of all trades. Master of all. </p>
-    <a href="#about" class="btn">View My Work</a>
-    <!-- Scroll Indicator -->
-  <div class="scroll-down">
-    &#x25BC;
+
+  <!-- 🔧 Under Construction Banner -->
+  <div class="banner">
+    🚧 This site is still under construction — check back soon!
   </div>
 
-  </header>
+  <!-- 🧭 Navigation -->
+  <nav class="navbar">
+    <div class="logo"><a href="index.html">Kat’s Corner</a></div>
+    <ul class="nav-links">
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="coursework.html">Coursework</a></li>
+      <li><a href="notes.html">Notes</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello, my name is Katrina (Kat) ^._.^ I'm a current freshman at the University of Illinois Urbana Champaign studying computer engineering. 
-      I'm an aspiring developer and designer. I have experience in UI/UX design, product management, and several programming 
-      langugages. I enjoy building all sorts of projects and they're right below this section. Enjoy!
-    </p>
-  </section>
+  <!-- 🌟 Hero / Featured Projects -->
+  <section class="hero" id="projects">
+    <h1>It's Kat here!</h1>
+    <p class="subtitle">Computer Engineering • Hardware × Software</p>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Design Projects</h2>
-    <div class="project-container">
-
-      <div class="project">
-        <h3>Clustr</h3>
-        <p> UI/UX designer for a developing start-up</p>
-        <a href="#" class="view-btn" data-modal="project1-modal">View Project</a>
-      </div>
-      <div class="project2">
-        <h3>Puzzol</h3>
-        <p> Product Case Competition Mock-up </p>
-        <a href="#" class="view-btn" data-modal="project2-modal">View Project</a>
+    <div class="featured-projects">
+      <div class="project-card" onclick="openModal()">
+        <img src="IMG_5704.jpg" alt="Project preview">
+        <h3>Vending Machine</h3>
+        <p>FSM + Circuit</p>
       </div>
 
+      <div class="project-card" >
+        <img src="images/project2.jpg" alt="Project preview">
+        <h3>Coming soon</h3>
+        <p>----</p>
+      </div>
     </div>
-  </section>
-  
-  <section id="projects2">
-    <h2>Hardware Projects</h2>
-    <div class="project-container">
-    <p> Coming Soon. .  .</p>
 
-    </div>
-  </section>
-
-  <section id="projects2"> 
-    
-    <h2>Mechanical Projects</h2>
-    <div class="project-container"></div>
-    <p> Coming Soon. .  .</p>
-
-    </div>
+    <div class="scroll-indicator">↓ Scroll</div>
   </section>
 
-  <section id="projects2"> 
-    
-    <h2>AR/VR Projects</h2>
-    <div class="project-container"></div>
-    <p> Coming Soon. .  .</p>
-
+  <!-- 👩‍💻 About Me -->
+  <section class="about">
+    <img src="catselfie.jpg" alt="Photo of Katrina">
+    <div class="about-text">
+      <h2>Hi, I’m Katrina 👋</h2>
+      <p>
+        I’m a computer engineering student at UIUC who loves building things. Check out my websites for past projects
+        or anything of your interest!
+        In addition to coding, I also enjoy photography and playing video games.
+      </p>
     </div>
   </section>
 
+  <!-- 📚 Notes -->
+  <section class="notes" id="notes">
+    <h2>Kat’s Notes</h2>
+    <div class="notes-grid">
+      <div class="note-card">coming soon</div>
+      <div class="note-card">coming soon</div>
+      <div class="note-card">coming soon</div>
+    </div>
+  </section>
 
-  <!-- Contact -->
+  <!-- 📬 Contact -->
   <footer id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:klin45@illinois.edu" target = "_blank" rel = "noopener">klin45@illinois.edu</a></p>
-    <p>LinkedIn: <a href = "https://www.linkedin.com/in/katlin-" target = "_blank" rel = "noopener"> Katrina Lin </a></p>
+    <p>Let’s connect!</p>
+    <p>
+      <a href="mailto:your@email.com">Email</a> •
+      <a href="https://github.com/yourusername">GitHub</a> •
+      <a href="#">LinkedIn</a>
+    </p>
   </footer>
 
+  <!-- 🔍 Project Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <h2>Vending Machine</h2>
+      <p>
+        A circuit design and finite state machine implementation of a vending machine using digital logic components. The 
+        machine simulates the process of selecting and dispensing items based on user input and coin insertion through two buttons, one is a
+        a quarter button and the other is a dime button. Here's more pictures of the project: 
+      </p>
+
+      <div class="modal-images">
+        <img src="images/project1.jpg">
+        <img src="images/project2.jpg">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-<script>
-  document.querySelectorAll(".view-btn").forEach(btn => {
-    btn.onclick = e => {
-      e.preventDefault();
-      const modal = document.getElementById(btn.dataset.modal);
-      modal.style.display = "flex";
-    }
-  });
-
-  document.querySelectorAll(".close").forEach(close => {
-    close.onclick = () => close.parentElement.parentElement.style.display = "none";
-  });
-
-  window.onclick = e => {
-    if (e.target.classList.contains("modal")) e.target.style.display="none";
-  }
-</script>
-
