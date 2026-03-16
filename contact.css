@@ -147,6 +147,33 @@ a {
 
 
 
+/* Main content margin */
+main {
+  margin: 0 5rem;
+  padding: 2rem 0;
+}
+
+/* Coursework dropdown styles */
+details {
+  margin-bottom: 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+details ul {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+details li {
+  margin-bottom: 0.5rem;
+}
+
 /* Footer */
 footer {
   text-align: center;
