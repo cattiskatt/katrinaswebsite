@@ -63,6 +63,43 @@ body {
   color: #d97c5a;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #faf7f2;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  min-width: 150px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #2e2e2e;
+}
+
+.dropdown-menu a:hover {
+  background: #e0e0e0;
+  color: #d97c5a;
+}
+
 /* Hero */
 .hero {
   background-image: url("background.png");
@@ -216,7 +253,7 @@ footer {
 }
 
 .timeline-image img {
-  width: 100%;
+  width: 80%;
   border-radius: 12px;
 }
 

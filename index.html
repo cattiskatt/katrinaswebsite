@@ -24,9 +24,14 @@
   <nav class="navbar">
     <div class="logo"><a href="index.html">Kat’s Corner</a></div>
     <ul class="nav-links">
-      <li><a href="project.html">Projects</a></li>
+      <li class="dropdown">
+        <a href="engproject.html">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a href="engproject.html">Engineering</a></li>
+          <li><a href="designproject.html">Design</a></li>
+        </ul>
+      </li>
       <li><a href="coursework.html">Coursework</a></li>
-      <li><a href="notes.html">Notes</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -34,19 +39,19 @@
   <!-- 🌟 Hero / Featured Projects -->
   <section class="hero" id="projects">
     <h1>It's Kat here!</h1>
-    <p class="subtitle">Computer Engineering • Hardware × Software</p>
+    <p class="subtitle">Engineering x Design </p>
 
     <div class="featured-projects">
       <div class="project-card" onclick="openModal()">
-        <img src="IMG_5704.jpg" alt="Project preview">
+        <img src="vendingmachine/IMG_5704.jpg" alt="Project preview">
         <h3>Vending Machine</h3>
         <p>FSM + Circuit</p>
       </div>
 
-      <div class="project-card" >
-        <img src="images/project2.jpg" alt="Project preview">
-        <h3>Coming soon</h3>
-        <p>----</p>
+      <div class="project-card" onclick="openModal2()">
+        <img src="arbusinesscard/IMG_0074 (1).png" alt="Project preview">
+        <h3>AR Business Card</h3>
+        <p>3D Modeling + AR</p>
       </div>
     </div>
 
@@ -61,28 +66,20 @@
       <p>
         I’m a computer engineering student at UIUC who loves building things. Check out my websites for past projects
         or anything of your interest!
-        In addition to coding, I also enjoy photography and playing video games.
+        In addition to coding, I also enjoy anything related to arts, whether that be photography, painting, or design in general. 
       </p>
     </div>
   </section>
 
-  <!-- 📚 Notes -->
-  <section class="notes" id="notes">
-    <h2>Kat’s Notes</h2>
-    <div class="notes-grid">
-      <div class="note-card">coming soon</div>
-      <div class="note-card">coming soon</div>
-      <div class="note-card">coming soon</div>
-    </div>
-  </section>
+
 
   <!-- 📬 Contact -->
   <footer id="contact">
     <p>Let’s connect!</p>
     <p>
-      <a href="mailto:your@email.com">Email</a> •
-      <a href="https://github.com/yourusername">GitHub</a> •
-      <a href="#">LinkedIn</a>
+      <a href="mailto:klin45@illinois.edu" target="_blank" rel="noopener noreferrer">Email</a> •
+      <a href="https://github.com/cattiskatt"  target="_blank" rel="noopener noreferrer">GitHub</a> •
+      <a href="https://www.linkedin.com/in/katlin-"  target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </p>
   </footer>
 
@@ -96,10 +93,27 @@
         machine simulates the process of selecting and dispensing items based on user input and coin insertion through two buttons, one is a
         a quarter button and the other is a dime button. Here's more pictures of the project: 
       </p>
-
+      <br>
       <div class="modal-images">
-        <img src="images/project1.jpg">
-        <img src="images/project2.jpg">
+        <img src="vendingmachine/IMG_5706.jpg">
+        <img src="vendingmachine/IMG_5707.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="projectModal2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <h2>AR Business Card</h2>
+      <p>
+        A 3D modeled business card that can be viewed in augmented reality. The card features a unique design and includes interactive elements that allow users to learn more about who I am and how they can contact me. The project was created using Spline for 3D modeling and Reality Composer for AR implementation.
+        Here's a quick demo video:
+      </p>
+      <br>
+      <div class="modal-images-videos">
+        <video width="320" height="240"controls>
+          <source src="arbusinesscard/businesscard.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
     </div>
   </div>
